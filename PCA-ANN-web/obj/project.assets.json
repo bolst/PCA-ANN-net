@@ -5323,11 +5323,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\RehseBlazor.csproj",
+      "projectUniqueName": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\RehseBlazor.csproj",
       "projectName": "RehseBlazor",
-      "projectPath": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\RehseBlazor.csproj",
+      "projectPath": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\RehseBlazor.csproj",
       "packagesPath": "C:\\Users\\Schroedinger!\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\obj\\",
+      "outputPath": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\Schroedinger!\\AppData\\Roaming\\NuGet\\NuGet.Config"
@@ -5391,7 +5391,7 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.200\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
       }
     }
   }

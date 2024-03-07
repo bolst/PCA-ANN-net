@@ -4,20 +4,12 @@ public class BkLoadPcaScores : AbstractBk
 {
     protected override async Task<string> Call()
     {
-        try{
-            var response = await client.PostAsJsonAsync<OptionProfileController>($"{UriBase()}/loadpca", OptionProfileController.Instance());
+        var response = await client.PostAsJsonAsync<OptionProfileController>($"{UriBase()}/loadpca", OptionProfileController.Instance());
 
-            if (response.IsSuccessStatusCode)
-            {
-                string response_value = await response.Content.ReadAsStringAsync();
-                return response_value;
-            }
-
-        }
-        catch(Exception exc)
+        if (response.IsSuccessStatusCode)
         {
-            Console.WriteLine(exc.ToString());
-            return exc.ToString();
+            string response_value = await response.Content.ReadAsStringAsync();
+            return response_value;
         }
 
         Console.WriteLine("Hello from load pca scores!");

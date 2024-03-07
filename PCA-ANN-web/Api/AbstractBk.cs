@@ -24,16 +24,28 @@ public abstract class AbstractBk
         {
             Task<string> statusCall = Call();
 
-            string retval = await statusCall;
-
-            if (retval == "success")
+            try
             {
-                StateService.Instance().State = StateAfterCompletion();
-                return true;
+                string retval = await statusCall;
+                if (retval == "success")
+                {
+                    StateService.Instance().State = StateAfterCompletion();
+                    return true;
+                }
+                else
+                {
+                    ErrorMessage = retval;
+                    return false;
+                }
             }
-            else
+            catch(HttpRequestException)
             {
-                ErrorMessage = retval;
+                ErrorMessage = "Connection error with PCA/ANN";
+                return false;
+            }
+            catch(Exception e)
+            {
+                ErrorMessage = e.ToString();
                 return false;
             }
         }

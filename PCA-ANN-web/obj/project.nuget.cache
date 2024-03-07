@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "md5U2vwSoIvMKWMjHRQmpm7tbWEUhSMhpB87k4pQVVkXSobAkCvnLH9P/Gip28OJCUTlNwxXxaqTM9R5jgU7tg==",
+  "dgSpecHash": "8Y6mLyPXPCTRDwK1xQn2oXr7wyzf3tG8l+RP2RL/r/lT7+RXuF6Nl6mb01ttGDUEfJBA12jjuIBo87d+I7KGdg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\RehseBlazor.csproj",
+  "projectFilePath": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\RehseBlazor.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Schroedinger!\\.nuget\\packages\\blazorise\\1.4.2\\blazorise.1.4.2.nupkg.sha512",
     "C:\\Users\\Schroedinger!\\.nuget\\packages\\blazorise.bootstrap\\1.4.2\\blazorise.bootstrap.1.4.2.nupkg.sha512",

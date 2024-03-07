@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "88lg17OB1HFTaGIYoxL1eOqXIqc3yK+VBECFoaVynGo=",
+  "Hash": "NnroPaDVBMzehzePZ8WP4rZYttWYkAlXt9m05YLK7ew=",
   "Source": "RehseBlazor",
   "BasePath": "_content/RehseBlazor",
   "Mode": "Default",
@@ -10,7 +10,7 @@
     {
       "Name": "RehseBlazor\\wwwroot",
       "Source": "RehseBlazor",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "Pattern": "**"
     }
@@ -777,10 +777,10 @@
       "OriginalItemSpec": "C:\\Users\\Schroedinger!\\.nuget\\packages\\blazorise\\1.4.2\\staticwebassets\\vendors\\sha512.js"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RehseBlazor.styles.css",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RehseBlazor.styles.css",
       "SourceId": "RehseBlazor",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "RehseBlazor.styles.css",
       "AssetKind": "All",
@@ -793,13 +793,13 @@
       "AssetTraitValue": "ApplicationBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RehseBlazor.styles.css"
+      "OriginalItemSpec": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\obj\\Debug\\net6.0\\scopedcss\\bundle\\RehseBlazor.styles.css"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RehseBlazor.bundle.scp.css",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RehseBlazor.bundle.scp.css",
       "SourceId": "RehseBlazor",
       "SourceType": "Computed",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "RehseBlazor.bundle.scp.css",
       "AssetKind": "All",
@@ -812,13 +812,13 @@
       "AssetTraitValue": "ProjectBundle",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RehseBlazor.bundle.scp.css"
+      "OriginalItemSpec": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\obj\\Debug\\net6.0\\scopedcss\\projectbundle\\RehseBlazor.bundle.scp.css"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\arrow.png",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\arrow.png",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "arrow.png",
       "AssetKind": "All",
@@ -834,10 +834,10 @@
       "OriginalItemSpec": "wwwroot\\arrow.png"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "css/bootstrap/bootstrap.min.css",
       "AssetKind": "All",
@@ -853,10 +853,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "css/bootstrap/bootstrap.min.css.map",
       "AssetKind": "All",
@@ -872,10 +872,10 @@
       "OriginalItemSpec": "wwwroot\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\FONT-LICENSE",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "css/open-iconic/FONT-LICENSE",
       "AssetKind": "All",
@@ -891,10 +891,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\FONT-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "css/open-iconic/font/css/open-iconic-bootstrap.min.css",
       "AssetKind": "All",
@@ -910,10 +910,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\css\\open-iconic-bootstrap.min.css"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.eot",
       "AssetKind": "All",
@@ -929,10 +929,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.eot"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.otf",
       "AssetKind": "All",
@@ -948,10 +948,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.otf"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.svg",
       "AssetKind": "All",
@@ -967,10 +967,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.svg"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.ttf",
       "AssetKind": "All",
@@ -986,10 +986,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.ttf"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "css/open-iconic/font/fonts/open-iconic.woff",
       "AssetKind": "All",
@@ -1005,10 +1005,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\font\\fonts\\open-iconic.woff"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\ICON-LICENSE",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "css/open-iconic/ICON-LICENSE",
       "AssetKind": "All",
@@ -1024,10 +1024,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\ICON-LICENSE"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\README.md",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\css\\open-iconic\\README.md",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "css/open-iconic/README.md",
       "AssetKind": "All",
@@ -1043,10 +1043,10 @@
       "OriginalItemSpec": "wwwroot\\css\\open-iconic\\README.md"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\css\\site.css",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\css\\site.css",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "css/site.css",
       "AssetKind": "All",
@@ -1062,10 +1062,10 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
-      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\favicon.ico",
+      "Identity": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\favicon.ico",
       "SourceId": "RehseBlazor",
       "SourceType": "Discovered",
-      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN\\PCA-ANN-web\\wwwroot\\",
+      "ContentRoot": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\wwwroot\\",
       "BasePath": "_content/RehseBlazor",
       "RelativePath": "favicon.ico",
       "AssetKind": "All",

@@ -9,55 +9,55 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = Linux,macOS,Windows
 build_property.RootNamespace = RehseBlazor
 build_property.RootNamespace = RehseBlazor
-build_property.ProjectDir = C:\Users\Schroedinger!\Documents\Nic\PCA-ANN\PCA-ANN-web\
+build_property.ProjectDir = C:\Users\Schroedinger!\Documents\Nic\PCA-ANN-net\PCA-ANN-web\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = 
 build_property.RazorLangVersion = 6.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = C:\Users\Schroedinger!\Documents\Nic\PCA-ANN\PCA-ANN-web
+build_property.MSBuildProjectDirectory = C:\Users\Schroedinger!\Documents\Nic\PCA-ANN-net\PCA-ANN-web
 build_property._RazorSourceGeneratorDebug = 
 
-[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN/PCA-ANN-web/App.razor]
+[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN-net/PCA-ANN-web/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN/PCA-ANN-web/Components/Arrow.razor]
+[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN-net/PCA-ANN-web/Components/Arrow.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xBcnJvdy5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN/PCA-ANN-web/Components/FlowChart.razor]
+[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN-net/PCA-ANN-web/Components/FlowChart.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xGbG93Q2hhcnQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN/PCA-ANN-web/Pages/Index.razor]
+[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN-net/PCA-ANN-web/Pages/Index.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSW5kZXgucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN/PCA-ANN-web/_Imports.razor]
+[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN-net/PCA-ANN-web/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN/PCA-ANN-web/Components/RunOptions/OptionItem.razor]
+[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN-net/PCA-ANN-web/Components/RunOptions/OptionItem.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSdW5PcHRpb25zXE9wdGlvbkl0ZW0ucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-tojmocblhm
 
-[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN/PCA-ANN-web/Components/RunOptions/Options.razor]
+[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN-net/PCA-ANN-web/Components/RunOptions/Options.razor]
 build_metadata.AdditionalFiles.TargetPath = Q29tcG9uZW50c1xSdW5PcHRpb25zXE9wdGlvbnMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-1jgxz13t00
 
-[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN/PCA-ANN-web/Shared/MainLayout.razor]
+[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN-net/PCA-ANN-web/Shared/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = U2hhcmVkXE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-gm2oidtngv
 
-[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN/PCA-ANN-web/Pages/Error.cshtml]
+[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN-net/PCA-ANN-web/Pages/Error.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcRXJyb3IuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN/PCA-ANN-web/Pages/_Host.cshtml]
+[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN-net/PCA-ANN-web/Pages/_Host.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0hvc3QuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
 
-[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN/PCA-ANN-web/Pages/_Layout.cshtml]
+[C:/Users/Schroedinger\!/Documents/Nic/PCA-ANN-net/PCA-ANN-web/Pages/_Layout.cshtml]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcX0xheW91dC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 

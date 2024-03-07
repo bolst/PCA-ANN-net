@@ -1,0 +1,183 @@
+@namespace RunOptions
+
+<div style="margin: 10px 0 0 0">
+    @{
+        string id = ProfileItem.Id();
+        string fontcolor = ThemeService.Instance().Secondary;
+        string bkg = ThemeService.Instance().Dark;
+
+        string itemWidth = "20%";
+    }
+
+    @if (ProfileItem.IsType<RangeableOptionProfileItem>())
+    {
+        if (((RangeableOptionProfileItem)ProfileItem).Range.Enabled)
+        {
+            Label = ProfileItem.Label() + " (Start, stop, step)";
+        }
+        else
+        {
+            Label = ProfileItem.Label();
+        }
+    }
+
+    <label for="@id">@Label</label>
+
+    @if (ProfileItem.IsType<NumericalInputOptionProfileItem>())
+    {
+        var Niopi = (NumericalInputOptionProfileItem)ProfileItem;
+        <input @bind-value="@Niopi.value" type="number" id="@id" name="@id" style="width:@itemWidth" required>
+    }
+    else if (ProfileItem.IsType<BoolOptionProfileItem>())
+    {
+        var Bopi = (BoolOptionProfileItem)ProfileItem;
+
+        <div id="maincontainer">
+            <div id="inner">
+
+                @{string ButtonText = Bopi.value ? "Enabled" : "Disabled";}
+
+                <Button Clicked="Toggle" Color="Color.Dark" TextColor="TextColor.Secondary" TextWeight="TextWeight.Bold" Width="Width.Em(10)">
+                    @ButtonText
+                </Button>
+
+            </div>
+        </div>
+    }
+    else if (ProfileItem.IsType<RangeableOptionProfileItem>())
+    {
+
+        RangeableOptionProfileItem Ropi = (RangeableOptionProfileItem)ProfileItem;
+
+        <div id="maincontainer">
+            <div id="inner">
+
+                @if (Ropi.Range.Enabled)
+                {
+                    RangeButtonText = "Disable Range";
+                }
+                else
+                {
+                    RangeButtonText = "Enable Range";
+                }
+
+                <Button Clicked="ToggleRangeable" Color="Color.Dark" TextColor="TextColor.Secondary" TextWeight="TextWeight.Bold" Width="Width.Em(10)">
+                    @RangeButtonText
+                </Button>
+
+                @if (Ropi.Range.Enabled)
+                {
+                    <input @bind-value="@Ropi.Range.Start" type="number" id="@id start" name="@id start"
+                        style="width:@itemWidth" required>
+                    <input @bind-value="@Ropi.Range.Stop" type="number" id="@id stop" name="@id stop" style="width:@itemWidth"
+                        required>
+                    <input @bind-value="@Ropi.Range.Step" type="number" id="@id step" name="@id step" style="width:@itemWidth"
+                        required>
+                }
+                else
+                {
+                    <input @bind-value="@Ropi.value" type="number" id="@id" name="@id" style="width:@itemWidth" required>
+                }
+            </div>
+        </div>
+
+    }
+    else if (ProfileItem.IsType<SelectOptionProfileItem>())
+    {
+
+        SelectOptionProfileItem pItem = (SelectOptionProfileItem)ProfileItem;
+
+        <Select TValue="string" @bind-SelectedValue="@pItem.value" Style="width: 30%;">
+            @foreach (string option in pItem.Options)
+            {
+                <SelectItem Value="@option">@option</SelectItem>
+            }
+        </Select>
+
+    }
+
+</div>
+
+@code {
+    #region Parameters
+
+    [Parameter]
+    [EditorRequired]
+    public IOptionProfileItem? ProfileItem { get; set; } // (ex: class num, optimizer, etc)
+
+    [Parameter]
+    public EventCallback<IOptionProfileItem> ProfileItemChanged { get; set; }
+
+
+    [Parameter]
+    public string Placeholder { get; set; } = "";
+
+    #endregion
+
+    #region constructor-ish
+    protected override void OnInitialized()
+    {
+        Label = ProfileItem.Label();
+
+        if (ProfileItem.IsType<RangeableOptionProfileItem>())
+        {
+            var rangeProfileItem = (RangeableOptionProfileItem)ProfileItem;
+            if (rangeProfileItem.Range.Enabled)
+            {
+                RangeButtonText = "Disable Range";
+                Label = ProfileItem.Label() + " (Start, stop, step)";
+            }
+            else
+            {
+                RangeButtonText = "Enable Range";
+                Label = ProfileItem.Label();
+            }
+        }
+
+
+        base.OnInitialized();
+    }
+
+    #endregion
+
+    protected string Label { get; set; }
+
+    #region rangeable
+    protected string RangeButtonText = "Enable Range";
+
+    private void ToggleRangeable()
+    {
+        var rangeProfileItem = (RangeableOptionProfileItem)ProfileItem;
+        rangeProfileItem.Range.Enabled = !rangeProfileItem.Range.Enabled;
+
+        if (rangeProfileItem.Range.Enabled)
+        {
+            RangeButtonText = "Disable Range";
+            Label = ProfileItem.Label() + " (Start, stop, step)";
+        }
+        else
+        {
+            RangeButtonText = "Enable Range";
+            Label = ProfileItem.Label();
+        }
+    }
+
+    #endregion
+
+    #region bool
+
+    private void Toggle()
+    {
+        var boolOptionProfile = (BoolOptionProfileItem)ProfileItem;
+        boolOptionProfile.value = !boolOptionProfile.value;
+    }
+
+    #endregion
+
+    public void Refresh()
+    {
+        StateHasChanged();
+        Console.WriteLine(ProfileItem.Value());
+    }
+
+}

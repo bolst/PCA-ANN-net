@@ -1,0 +1,21 @@
+body[b-5i00g3z1fa] {
+    margin: 20px;
+}
+
+form[b-5i00g3z1fa] {
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+label[b-5i00g3z1fa] {
+    display: block;
+    margin-bottom: 8px;
+}
+
+input[b-5i00g3z1fa],
+select[b-5i00g3z1fa] {
+    width: 80%;
+    padding: 8px;
+    margin-bottom: 16px;
+    box-sizing: border-box;
+}

@@ -1,0 +1,7 @@
+/Users/nic/playground/RehseBlazor/RehseBlazor/obj/Debug/net6.0/PCAANN.GeneratedMSBuildEditorConfig.editorconfig
+/Users/nic/playground/RehseBlazor/RehseBlazor/obj/Debug/net6.0/PCAANN.AssemblyInfoInputs.cache
+/Users/nic/playground/RehseBlazor/RehseBlazor/obj/Debug/net6.0/PCAANN.AssemblyInfo.cs
+/Users/nic/playground/RehseBlazor/RehseBlazor/obj/Debug/net6.0/PCAANN.csproj.CoreCompileInputs.cache
+/Users/nic/playground/RehseBlazor/RehseBlazor/obj/Debug/net6.0/PCAANN.MvcApplicationPartsAssemblyInfo.cache
+/Users/nic/playground/RehseBlazor/RehseBlazor/obj/Debug/net6.0/PCAANN.RazorAssemblyInfo.cache
+/Users/nic/playground/RehseBlazor/RehseBlazor/obj/Debug/net6.0/PCAANN.RazorAssemblyInfo.cs

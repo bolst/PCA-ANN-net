@@ -1,0 +1,76 @@
+@namespace RunOptions
+@inject OptionProfile Profile
+
+<div class="page">
+
+    <!-- tabs -->
+    <div class="pcss3t pcss3t-effect-scale pcss3t-theme-1">
+        <input type="radio" name="pcss3t" checked id="tab1" class="tab-content-first">
+        <label for="tab1" style="font-weight: bold;">PCA</label>
+
+        <input type="radio" name="pcss3t" id="tab2" class="tab-content-2">
+        <label for="tab2" style="font-weight: bold;">ANN</label>
+
+        <ul>
+
+            <li class="tab-content tab-content-first typography">
+                <OptionItem @ref="ChildComponents[0]" @bind-ProfileItem="Profile.NumComponents" />
+                <OptionItem @ref="ChildComponents[1]" @bind-ProfileItem="Profile.FullSpectrum" />
+            </li>
+
+            <li class="tab-content tab-content-2 typography">
+                <OptionItem @ref="ChildComponents[2]" @bind-ProfileItem="Profile.Framework" />
+                <OptionItem @ref="ChildComponents[3]" @bind-ProfileItem="Profile.Optimizer" />
+                <OptionItem @ref="ChildComponents[4]" @bind-ProfileItem="Profile.Activation" />
+                <OptionItem @ref="ChildComponents[5]" @bind-ProfileItem="Profile.Loss" />
+                <OptionItem @ref="ChildComponents[6]" @bind-ProfileItem="Profile.Epochs" />
+                <OptionItem @ref="ChildComponents[7]" @bind-ProfileItem="Profile.BatchSize" />
+                <OptionItem @ref="ChildComponents[8]" @bind-ProfileItem="Profile.Patience" />
+                <OptionItem @ref="ChildComponents[9]" @bind-ProfileItem="Profile.HiddenNodes" />
+                <OptionItem @ref="ChildComponents[10]" @bind-ProfileItem="Profile.Runs" />
+                <OptionItem @ref="ChildComponents[11]" @bind-ProfileItem="Profile.ClassNumber" />
+            </li>
+
+        </ul>
+
+    </div>
+    <div id="maincontainer">
+        <div id="inner">
+            @{
+                string fontcolor = ThemeService.Instance().Secondary;
+                string bkg = ThemeService.Instance().Dark;
+            }
+            <button class="Button" @onclick="SaveProfile" style="
+            margin: 0 10px 0 0; 
+            color: @fontcolor; 
+            background-color: @bkg;">
+                Save Profile
+            </button>
+            <button class="Button" @onclick="LoadProfile" style="
+            margin: 0 10px 0 0; 
+            color: @fontcolor; 
+            background-color: @bkg;">
+                Load Profile
+            </button>
+        </div>
+    </div>
+</div>
+
+@code {
+
+    protected OptionItem[] ChildComponents = new OptionItem[12];
+    private void RefreshChildren()
+    {
+        for (int i = 0; i < ChildComponents.Length; i++)
+            ChildComponents[i].Refresh();
+    }
+
+    // TODO: make this dynamic
+    public void LoadProfile() { Profile.Update("Profiles/Data.json"); RefreshChildren(); }
+
+    public void SaveProfile()
+    {
+        Console.WriteLine(Profile.ToJson());
+    }
+
+}

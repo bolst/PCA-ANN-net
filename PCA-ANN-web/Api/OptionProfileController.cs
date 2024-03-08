@@ -19,14 +19,15 @@ public class OptionProfileController
 
         components = (int)inst.NumComponents.Value();
         fullSpectrum = (bool)inst.FullSpectrum.Value();
-        framework = (string)inst.Framework.Value();
-        optimizer = (string)inst.Optimizer.Value();
-        activation = (string)inst.Activation.Value();
-        loss = (string)inst.Loss.Value();
-        epochs = (string)inst.Epochs.Value();
-        batchSize = (string)inst.BatchSize.Value();
-        patience = (string)inst.Patience.Value();
-        hiddenNodes = (string)inst.HiddenNodes.Value();
+        framework = inst.Framework.Value().ToString();
+        optimizer = inst.Optimizer.Value().ToString();
+        activation = inst.Activation.Value().ToString();
+        loss = inst.Loss.Value().ToString();
+        Console.WriteLine(inst.Epochs.Value() + "\n\n\n");
+        epochs = inst.Epochs.Value().ToString();
+        batchSize = inst.BatchSize.Value().ToString();
+        patience = inst.Patience.Value().ToString();
+        hiddenNodes = inst.HiddenNodes.Value().ToString();
         runs = (int)inst.Runs.Value();
         classNumber = (int)inst.ClassNumber.Value();
     }

@@ -2,6 +2,7 @@ import os
 import xlsxwriter
 import pandas as pd
 import numpy as np
+import utils
 import sklearn.preprocessing as sk
 from sklearn.metrics import confusion_matrix
 from tensorflow.keras.models import Sequential
@@ -60,19 +61,19 @@ class ANN:
         self.num_pcs = PrincipalComponents
 
         #self.batch = 64 #change to 64 for 1500 data set 
-        self.batch_range = BatchSize
+        self.batch_range = utils.to_range(BatchSize)
 
         #self.pmin = 20
         #self.pmax = 50
         #self.pstep = 5
-        self.patience_range = Patience
+        self.patience_range = utils.to_range(Patience)
 
-        self.epochs_range = Epochs
+        self.epochs_range = utils.to_range(Epochs)
         
         #self.hiddenmin = 80
         #self.hiddenmax = 180
         #self.hiddenstep = 10
-        self.hidden_range = HiddenNodes
+        self.hidden_range = utils.to_range(HiddenNodes)
         
         self.runs = Runs
 

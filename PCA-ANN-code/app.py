@@ -12,9 +12,26 @@ raw_data_filepath = ''
 pca_scores_filepath = ''
 ann_results_filepath = ''
 
+
 def success():
     print('done!')
     return 'success'
+
+
+@app.route('/raw-data/files')
+def raw_data_files():
+    return os.listdir(RAW_DATA_PATH)
+
+
+@app.route('/scores/files')
+def scores_files():
+    return os.listdir(SCORES_DIR)
+
+
+@app.route('/results/files')
+def results_files():
+    return os.listdir(RESULTS_DIR)
+
 
 @app.route('/loadfile', methods=['POST'])
 def loadfile():
@@ -28,22 +45,24 @@ def loadfile():
 
     if not os.path.isfile(raw_data_filepath):
         return 'error: cannot find file'
-    
+
     print('Loaded!')
 
     return success()
 
+
 @app.route('/runpca', methods=['POST'])
 def runpca():
     received_data = request.json
-    
+
     try:
         global pca_instance, raw_data_filepath, pca_scores_filepath
         filepath = raw_data_filepath
         components = received_data['components']
         full_spectrum = received_data['fullSpectrum']
-        
-        pca_instance = PCA(filepath, components=components, full_spectrum=full_spectrum)
+
+        pca_instance = PCA(filepath, components=components,
+                           full_spectrum=full_spectrum)
         pca_scores_filepath = pca_instance.run()
     except Exception as exc:
         # TODO: yell
@@ -52,10 +71,11 @@ def runpca():
 
     return success()
 
+
 @app.route('/loadpca', methods=['POST'])
 def load_pca_scores():
     global pca_scores_filepath
-    
+
     received_data = request.json
     print(received_data)
     filename = received_data['pcaScoresFilename']
@@ -64,10 +84,11 @@ def load_pca_scores():
 
     if not os.path.isfile(pca_scores_filepath):
         return 'error: cannot find file'
-    
+
     print('Loaded!')
 
     return success()
+
 
 @app.route('/runann', methods=['POST'])
 def runann():
@@ -100,18 +121,20 @@ def runann():
                            Runs=runs,
                            ClassNumber=classNumber,
                            PrincipalComponents=principalComponents)
-        
+
         ann_results_filepath = ann_instance.run()
     except Exception as exc:
         # TODO: yell
         print(exc)
         return 'error'
-    
+
     return success()
+
 
 @app.route('/viewresults')
 def view_results():
     return success()
+
 
 def parse_ranges(data: dict) -> dict:
     for key in data:
@@ -133,7 +156,6 @@ def parse_ranges(data: dict) -> dict:
             data[key] = int(value)
 
     return data
-
 
 
 if __name__ == "__main__":

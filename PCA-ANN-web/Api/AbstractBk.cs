@@ -3,7 +3,7 @@ namespace RehseBlazor.Api;
 public abstract class AbstractBk
 {
 
-    protected string ErrorMessage {get; set;} = "";
+    protected string ErrorMessage { get; set; } = "";
 
     protected HttpClient client = new HttpClient();
 
@@ -38,12 +38,12 @@ public abstract class AbstractBk
                     return false;
                 }
             }
-            catch(HttpRequestException)
+            catch (HttpRequestException)
             {
                 ErrorMessage = "Connection error with PCA/ANN";
                 return false;
             }
-            catch(Exception e)
+            catch (Exception e)
             {
                 ErrorMessage = e.ToString();
                 return false;
@@ -57,7 +57,7 @@ public abstract class AbstractBk
         return false;
     }
 
-    protected string UriBase() { return @"http://127.0.0.1:8000/"; }//@"http://host.docker.internal:8000/"; }
+    protected string UriBase() { return Api.UriBase.Uri(); }
 
     public string GetError() { return ErrorMessage; }
 

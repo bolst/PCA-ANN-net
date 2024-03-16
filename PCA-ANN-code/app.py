@@ -133,6 +133,14 @@ def runann():
 
 @app.route('/viewresults')
 def view_results():
+    # TODO: verify this works
+    if len(ann_results_filepath) == 0:
+        return 'error: not sure what file is trying to be opened'
+    try:
+        os.system(f'start EXCEL.EXE {ann_results_filepath}')
+    except Exception as exc:
+        print(exc)
+        return 'error'
     return success()
 
 

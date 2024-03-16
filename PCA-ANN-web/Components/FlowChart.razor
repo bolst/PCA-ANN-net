@@ -217,8 +217,6 @@
         List<string> retval = new List<string>();
         List<string> filePaths = new List<string>();
 
-        Console.WriteLine(Directory.GetCurrentDirectory() + "\n\n\n\n");
-
         //if (rawFiles) filePaths = Directory.GetFiles(@"../PCA-ANN-code/RAW-DATA");
         //else filePaths = Directory.GetFiles(@"../PCA-ANN-code/SCORES");
         if (rawFiles) filePaths = await Api.DataExchange.GetRawDataFiles();

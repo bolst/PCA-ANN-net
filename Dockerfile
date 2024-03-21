@@ -5,9 +5,9 @@ EXPOSE 443
 
 FROM mcr.microsoft.com/dotnet/sdk:6.0 AS build
 WORKDIR /src
-COPY ["RehseBlazor.csproj", "."]
+COPY ["PCA-ANN-web/RehseBlazor.csproj", "."]
 RUN dotnet restore "RehseBlazor.csproj"
-COPY . .
+COPY PCA-ANN-web/. .
 RUN dotnet build "RehseBlazor.csproj" -c Release -o /app/build
 
 FROM build AS publish

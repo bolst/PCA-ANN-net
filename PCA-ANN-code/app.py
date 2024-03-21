@@ -5,6 +5,10 @@ from ann import ANN, RESULTS_DIR
 
 app = Flask(__name__)
 
+RAW_DATA_PATH = 'PCA-ANN-code/' + RAW_DATA_PATH
+SCORES_DIR = 'PCA-ANN-code/' + SCORES_DIR
+RESULTS_DIR = 'PCA-ANN-code/' + RESULTS_DIR
+
 pca_instance = None
 ann_instance = None
 

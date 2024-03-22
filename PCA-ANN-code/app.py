@@ -5,10 +5,6 @@ from ann import ANN, RESULTS_DIR
 
 app = Flask(__name__)
 
-RAW_DATA_PATH = 'PCA-ANN-code/' + RAW_DATA_PATH
-SCORES_DIR = 'PCA-ANN-code/' + SCORES_DIR
-RESULTS_DIR = 'PCA-ANN-code/' + RESULTS_DIR
-
 pca_instance = None
 ann_instance = None
 
@@ -97,7 +93,6 @@ def load_pca_scores():
 @app.route('/runann', methods=['POST'])
 def runann():
     received_data = request.json
-
     try:
         global ann_instance, pca_scores_filepath, ann_results_filepath
         received_data = parse_ranges(received_data)
@@ -112,7 +107,6 @@ def runann():
         runs = received_data['runs']
         classNumber = received_data['classNumber']
         principalComponents = received_data['components']
-
         ann_instance = ANN(pca_scores_filepath,
                            Framework=framework,
                            Optimizer=optimizer,
@@ -129,6 +123,7 @@ def runann():
         ann_results_filepath = ann_instance.run()
     except Exception as exc:
         # TODO: yell
+        print('oh man\n\n\n')
         print(exc)
         return 'error'
 
@@ -141,7 +136,7 @@ def view_results():
     if len(ann_results_filepath) == 0:
         return 'error: not sure what file is trying to be opened'
     try:
-        os.system(f'start EXCEL.EXE {ann_results_filepath}')
+        os.system(f'start EXCEL.EXE "{ann_results_filepath}"')
     except Exception as exc:
         print(exc)
         return 'error'
@@ -158,14 +153,17 @@ def parse_ranges(data: dict) -> dict:
         if value == None:
             continue
         # if the value is an encoded range
-        if type(value) is str and ' ' in value:
-            val, start, stop, step = value.split(' ')
-            start = int(start)
-            stop = int(stop)
-            step = int(step)
-            data[key] = range(start, stop, step)
-        elif type(value) is str and value.isnumeric():
-            data[key] = int(value)
+        try:
+            if type(value) is str and ' ' in value:
+                val, start, stop, step = value.split(' ')
+                start = int(start)
+                stop = int(stop)
+                step = int(step)
+                data[key] = range(start, stop, step)
+            elif type(value) is str and value.isnumeric():
+                data[key] = int(value)
+        except:
+            continue
 
     return data
 

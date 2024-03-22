@@ -1,27 +1,25 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nic\\git\\PCA-ANN-net\\PCA-ANN-web\\RehseBlazor.csproj": {}
+    "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\RehseBlazor.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nic\\git\\PCA-ANN-net\\PCA-ANN-web\\RehseBlazor.csproj": {
+    "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\RehseBlazor.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nic\\git\\PCA-ANN-net\\PCA-ANN-web\\RehseBlazor.csproj",
+        "projectUniqueName": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\RehseBlazor.csproj",
         "projectName": "RehseBlazor",
-        "projectPath": "C:\\Users\\Nic\\git\\PCA-ANN-net\\PCA-ANN-web\\RehseBlazor.csproj",
-        "packagesPath": "C:\\Users\\Nic\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nic\\git\\PCA-ANN-net\\PCA-ANN-web\\obj\\",
+        "projectPath": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\RehseBlazor.csproj",
+        "packagesPath": "C:\\Users\\Schroedinger!\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Schroedinger!\\Documents\\Nic\\PCA-ANN-net\\PCA-ANN-web\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\Nic\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "C:\\Users\\Schroedinger!\\AppData\\Roaming\\NuGet\\NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "net6.0"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -34,6 +32,11 @@
           "warnAsError": [
             "NU1605"
           ]
+        },
+        "restoreAuditProperties": {
+          "enableAudit": "true",
+          "auditLevel": "low",
+          "auditMode": "direct"
         }
       },
       "frameworks": {
@@ -72,7 +75,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\8.0.201\\RuntimeIdentifierGraph.json"
         }
       }
     }

@@ -9,7 +9,7 @@ from tensorflow.keras.models import Sequential
 from tensorflow.keras.layers import Dense
 from tensorflow.keras import callbacks
 
-RESULTS_DIR = 'RESULTS'
+RESULTS_DIR = 'PCA-ANN-code/RESULTS'
 
 
 class ANN:
@@ -28,13 +28,14 @@ class ANN:
                  ClassNumber=3,
                  PrincipalComponents=10
                  ):
+        print('uh1h')
 
         # check input file
         m = self.checkInput(path)
         if len(m) != 0:
             raise ValueError(m)
+        print('uhh2')
         self.input_filename, self.input_file_extension = os.path.splitext(path)
-
         # output stored in file with same name as input suffixed with "-ANNResults"
         self.output_filename = RESULTS_DIR + '/' + \
             self.input_filename.split('/')[-1] + '-ANNRESULTS.xlsx'

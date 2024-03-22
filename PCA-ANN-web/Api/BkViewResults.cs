@@ -4,8 +4,15 @@ public class BkViewResults : AbstractBk
 {
     protected override async Task<string> Call()
     {
+
+        var response = await client.GetAsync($"{UriBase()}/viewresults");
+        if (response.IsSuccessStatusCode)
+        {
+            string response_value = await response.Content.ReadAsStringAsync();
+            return response_value;
+        }
+
         Console.WriteLine("Hello from view results!");
-        await Task.Delay(1);
         return "success";
     }
 

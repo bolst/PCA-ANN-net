@@ -7,8 +7,8 @@ import matplotlib.pyplot as plt
 from sklearn.decomposition import PCA as sklearnPCA
 import xlsxwriter
 
-RAW_DATA_PATH = 'RAW-DATA'
-SCORES_DIR = 'SCORES'
+RAW_DATA_PATH = 'PCA-ANN-code/RAW-DATA'
+SCORES_DIR = 'PCA-ANN-code/SCORES'
 
 
 class PCA:
@@ -271,7 +271,7 @@ class PCA:
         filename, extension = os.path.splitext(path)
         csv_filename = self.uniquify(filename + '.csv')
 
-        call(['cscript.exe', 'ExcelToCSV.vbs', path, csv_filename, '1'])
+        call(['cscript.exe', 'PCA-ANN-code/ExcelToCSV.vbs', path, csv_filename, '1'])
 
         if not os.path.exists(csv_filename):
             return ''

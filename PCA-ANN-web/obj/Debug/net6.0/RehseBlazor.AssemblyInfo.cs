@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("RehseBlazor")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+69adcda5a054923f55b5423b236a3363a584a3be")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f00e6242695f1fb10a29979a2f7af5c031e4eb95")]
 [assembly: System.Reflection.AssemblyProductAttribute("RehseBlazor")]
 [assembly: System.Reflection.AssemblyTitleAttribute("RehseBlazor")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

@@ -216,3 +216,4 @@ C:\Users\Nic\git\PCA-ANN-net\PCA-ANN-web\obj\Debug\net6.0\RehseBlazor.genruntime
 C:\Users\Nic\git\PCA-ANN-net\PCA-ANN-web\obj\Debug\net6.0\ref\RehseBlazor.dll
 C:\Users\Nic\git\PCA-ANN-net\PCA-ANN-web\bin\Debug\net6.0\Profiles\test.json
 C:\Users\Schroedinger!\Documents\Nic\PCA-ANN-net\PCA-ANN-web\bin\Debug\net6.0\Profiles\test.json
+C:\Users\Schroedinger!\Documents\Nic\PCA-ANN-net\PCA-ANN-web\bin\Debug\net6.0\Profiles\ann full spectrum attempt.json

@@ -2,7 +2,7 @@
     {
         "id": "Number of Components",
         "type": "numerical",
-        "value": 3,
+        "value": 10,
         "enabled": true
     },
     {

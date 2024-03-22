@@ -1,0 +1,6 @@
+<Button Color="Color.Primary">@ChildContent</Button>
+
+@code {
+    [Parameter] public RenderFragment? ChildContent { get; set; }
+    [Parameter] public Color ButtonColor { get; set; } = Color.Primary;
+}

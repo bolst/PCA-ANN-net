@@ -5,5 +5,5 @@ if ( $env -eq "dev") {
     dotnet watch --project .\PCA-ANN-web\RehseBlazor.csproj
 }
 else {
-    .\run-docker.bat
+    .\run-docker.ps1
 }

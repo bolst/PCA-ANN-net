@@ -1,4 +1,6 @@
 @namespace RunOptions
+@using System.IO
+@using System.Text.Json
 @inject OptionProfile Profile
 
 <div class="page">
@@ -40,13 +42,13 @@
                 string fontcolor = ThemeService.Instance().Secondary;
                 string bkg = ThemeService.Instance().Dark;
             }
-            <button class="Button" @onclick="SaveProfile" style="
+            <button class="Button" @onclick="ShowSaveModal" style="
             margin: 0 10px 0 0; 
             color: @fontcolor; 
             background-color: @bkg;">
                 Save Profile
             </button>
-            <button class="Button" @onclick="LoadProfile" style="
+            <button class="Button" @onclick="ShowLoadModal" style="
             margin: 0 10px 0 0; 
             color: @fontcolor; 
             background-color: @bkg;">
@@ -56,7 +58,72 @@
     </div>
 </div>
 
+<Modal @ref="LoadProfileModal">
+    <ModalContent Centered>
+        <ModalHeader>
+            <ModalTitle>Select File</ModalTitle>
+            <CloseButton />
+        </ModalHeader>
+        <ModalBody>
+            <Select TValue="string" SelectedValue="@SelectedProfileFile" SelectedValueChanged="@LoadProfileOnChanged">
+                <SelectItem Hidden>Select</SelectItem>
+                @foreach (string file in ProfileFiles)
+                {
+                    var myFilePath = file;
+                    var myFile = System.IO.Path.GetFileName(myFilePath);
+                    <SelectItem Value="@myFile">@myFile</SelectItem>
+                }
+            </Select>
+        </ModalBody>
+        <ModalFooter>
+            <Button Color="Color.Primary" Clicked="@LoadProfile">Load</Button>
+        </ModalFooter>
+    </ModalContent>
+</Modal>
+
+<Modal @ref="SaveProfileModal">
+    <ModalContent Centered>
+        <ModalHeader>
+            <ModalTitle>Enter Profile Name</ModalTitle>
+            <CloseButton />
+        </ModalHeader>
+        <ModalBody>
+            <TextEdit Placeholder="Profile name..." @bind-Text="@SaveProfileName" />
+        </ModalBody>
+        <ModalFooter>
+            <Button Color="Color.Primary" Clicked="@SaveProfile">Save</Button>
+        </ModalFooter>
+    </ModalContent>
+</Modal>
+
 @code {
+
+    private Modal LoadProfileModal;
+    private Task ShowLoadModal() { return LoadProfileModal.Show(); }
+    private Task HideLoadModal() { return LoadProfileModal.Hide(); }
+    private string SelectedProfileFile { get; set; }
+    string[] ProfileFiles;
+    async Task LoadProfileOnChanged(String e)
+    {
+        try
+        {
+            if (e == null) return;
+            SelectedProfileFile = e;
+        }
+        catch (Exception exc)
+        {
+            Console.WriteLine(exc);
+        }
+        finally
+        {
+            StateHasChanged();
+        }
+    }
+
+    private Modal SaveProfileModal;
+    private Task ShowSaveModal() { return SaveProfileModal.Show(); }
+    private Task HideSaveModal() { return SaveProfileModal.Hide(); }
+    private string SaveProfileName { get; set; }
 
     protected OptionItem[] ChildComponents = new OptionItem[12];
     private void RefreshChildren()
@@ -65,12 +132,35 @@
             ChildComponents[i].Refresh();
     }
 
-    // TODO: make this dynamic
-    public void LoadProfile() { Profile.Update("Profiles/Data.json"); RefreshChildren(); }
+    public void LoadProfile()
+    {
+        ProfileFiles = Directory.GetFiles("Profiles");
+        Profile.Update($"Profiles/{SelectedProfileFile}");
+        RefreshChildren();
+        HideLoadModal();
+    }
 
     public void SaveProfile()
     {
+        ProfileFiles = Directory.GetFiles("Profiles");
+        SaveProfileName = SaveProfileName.Replace(".json", "");
+        if (File.Exists($"Profiles/{SaveProfileName}.json"))
+        {
+            SaveProfileName = "Name is already taken!";
+        }
+        else
+        {
+            File.WriteAllText($"Profiles/{SaveProfileName}.json", Profile.ToJson());
+            HideSaveModal();
+        }
         Console.WriteLine(Profile.ToJson());
+    }
+
+    protected override void OnInitialized()
+    {
+        Console.WriteLine(Directory.GetCurrentDirectory());
+        ProfileFiles = Directory.GetFiles("Profiles");
+        base.OnInitialized();
     }
 
 }

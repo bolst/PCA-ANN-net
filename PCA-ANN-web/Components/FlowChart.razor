@@ -1,52 +1,52 @@
 @using RehseBlazor.Api
 
-<div class="Button-container">
-    <Alert Color="Color.Warning" @bind-Visible="@isAlertVisible">
-        <AlertDescription>
-            @alertText
-        </AlertDescription>
-        <CloseButton />
-    </Alert>
+<Alert Color="Color.Warning" @bind-Visible="@isAlertVisible">
+    <AlertDescription>
+        @alertText
+    </AlertDescription>
+    <CloseButton />
+</Alert>
 
-    @{
-        string darkBkg = ThemeService.Instance().Dark;
-        string redBkg = ThemeService.Instance().Warning;
-    }
+@{
+    string darkBkg = ThemeService.Instance().Dark;
+    string redBkg = ThemeService.Instance().Warning;
+}
 
-    @if (isLoading)
-    {
-        <div class="loader" />
-    }
+@if (isLoading)
+{
+    <div class="loader" />
+}
 
-    <button class="Button" style="background-color: @darkBkg; color: @GetFontColor(new BkLoadRaw())"
-        @onclick="async () => await OpenFile(new BkLoadRaw())">Load Raw
-        Data</button>
+<FancyButton>Load Raw Data</FancyButton>
 
-    <Arrow />
+<button class="Button" style="background-color: @darkBkg; color: @GetFontColor(new BkLoadRaw())"
+    @onclick="async () => await OpenFile(new BkLoadRaw())">Load Raw
+    Data</button>
 
-    <button class="Button" style="background-color: @darkBkg; color: @GetFontColor(new BkRunPca())"
-        @onclick="async () => await CallApi(new BkRunPca())">Run PCA</button>
+<Arrow />
 
-    <Arrow />
+<button class="Button" style="background-color: @darkBkg; color: @GetFontColor(new BkRunPca())"
+    @onclick="async () => await CallApi(new BkRunPca())">Run PCA</button>
 
-    <button class="Button" style="background-color: @darkBkg; color: @GetFontColor(new BkLoadPcaScores())"
-        @onclick="async () => await OpenFile(new BkLoadPcaScores(), false)">Load PCA
-        Scores</button>
+<Arrow />
 
-    <Arrow />
+<button class="Button" style="background-color: @darkBkg; color: @GetFontColor(new BkLoadPcaScores())"
+    @onclick="async () => await OpenFile(new BkLoadPcaScores(), false)">Load PCA
+    Scores</button>
 
-    <button class="Button" style="background-color: @darkBkg; color: @GetFontColor(new BkRunAnn())"
-        @onclick="async () => await CallApi(new BkRunAnn())">Run ANN</button>
+<Arrow />
 
-    <Arrow />
+<button class="Button" style="background-color: @darkBkg; color: @GetFontColor(new BkRunAnn())"
+    @onclick="async () => await CallApi(new BkRunAnn())">Run ANN</button>
 
-    <button class="Button" style="background-color: @darkBkg; color: @GetFontColor(new BkViewResults())"
-        @onclick="async () => await CallApi(new BkViewResults())">View
-        Results</button>
+<Arrow />
 
-    <button class="Button" style="background-color: @redBkg; color: @darkBkg" @onclick="Reset">Reset</button>
+<button class="Button" style="background-color: @darkBkg; color: @GetFontColor(new BkViewResults())"
+    @onclick="async () => await CallApi(new BkViewResults())">View
+    Results</button>
 
-</div>
+<button class="Button" style="background-color: @redBkg; color: @darkBkg" @onclick="Reset">Reset</button>
+
 
 @if (RawDataFiles != null && ScoresFiles != null)
 {

@@ -1,19 +1,39 @@
 ﻿@page "/"
 @using RehseBlazor.Api
 
+@*
 <h1>PCA-ANN</h1>
 
 <hr class="rounded" />
 
 <div id="maincontainer">
-    <div id="inner">
+<div id="inner">
 
-        <div class="maincontainerchild flowchart">
-            <FlowChart />
-        </div>
-
-        <div class="maincontainerchild options">
-            <RunOptions.Options />
-        </div>
-    </div>
+<div class="maincontainerchild flowchart">
+<FlowChart />
 </div>
+
+<div class="maincontainerchild options">
+<RunOptions.Options />
+</div>
+</div>
+</div>
+*@
+
+<Heading>PCA-ANN</Heading>
+
+<Divider />
+
+<Grid>
+    <Column ColumnSize="ColumnSize.Is1"></Column>
+
+    <Column ColumnSize="ColumnSize.Is1" TextAlignment="TextAlignment.Center">
+        <FlowChart />
+    </Column>
+
+    <Column ColumnSize="ColumnSize.Is1"></Column>
+
+    <Column ColumnSize="ColumnSize.Is8">
+        <RunOptions.Options />
+    </Column>
+</Grid>
